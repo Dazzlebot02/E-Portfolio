@@ -169,7 +169,7 @@ export const experiences: Experience[] = [
     title: 'Computer Information Systems Student',
     company: 'Monroe University',
     location: 'St. Lucia',
-    startDate: '2024-05',
+    startDate: '2024-06',
     endDate: '',
     current: true,
     description: [
@@ -184,7 +184,7 @@ export const experiences: Experience[] = [
     title: 'Frontend Developer',
     company: 'Limin Holdings Ltd',
     location: 'Remote',
-    startDate: '2024-10',
+    startDate: '2024-11',
     endDate: '',
     current: true,
     description: [
@@ -194,4 +194,22 @@ export const experiences: Experience[] = [
       'Created interactive user interfaces with focus on accessibility and performance',
     ],
   },
+  {
+    id: 3,
+    title: 'IT Intern',
+    company: 'Limin Holdings Ltd',
+    location: 'Remote',
+    startDate: '2025-06',
+    endDate: '2024-07',
+    current: false,
+    description: [
+      'Assisted in the development and maintenance of internal software applications',
+      'Participated in system analysis and design sessions to gather requirements',
+      'Contributed to database management tasks including data entry and query optimization',
+      'Gained exposure to project management methodologies and team collaboration tools',
+      "Delved deeper into frontend technologies, enhancing skills in React and JavaScript",
+      'Learned about backend integration and API development to support frontend applications',
+      'Developed problem-solving skills through real-world IT challenges and troubleshooting',
+    ],
+  }
 ];

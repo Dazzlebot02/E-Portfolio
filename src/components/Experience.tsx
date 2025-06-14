@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin } from 'lucide-react';
+import { Calendar, FileText, MapPin } from 'lucide-react';
 import { experiences } from '../data/portfolio';
 
 const Experience: React.FC = () => {
@@ -29,7 +29,7 @@ const Experience: React.FC = () => {
             <div key={exp.id} className="relative flex items-start mb-12 last:mb-0">
               {/* Timeline Dot */}
               <div className="absolute left-6 w-4 h-4 bg-white border-4 border-cyan-500 rounded-full shadow-lg"></div>
-              
+
               {/* Content */}
               <div className="ml-16 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200 w-full">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -76,9 +76,14 @@ const Experience: React.FC = () => {
 
         {/* Download Resume */}
         <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg font-medium hover:from-cyan-600 hover:to-cyan-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-cyan-500/25">
-            Download Resume
-          </button>
+          <a
+            href="/documents/Dazurna_Warner_Resume.pdf"
+            download
+            className="inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg font-medium hover:from-cyan-600 hover:to-cyan-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-cyan-500/25"
+          >
+            <FileText className="w-5 h-5" />
+            <span>Download Resume</span>
+          </a>
         </div>
       </div>
     </section>
